@@ -1,0 +1,57 @@
+
+
+<div class="row" *ngIf="peliculas">
+    <div class="col-sm-6" >
+      <div class="row">
+        <div class="col-md-12 div-pic-1"
+              [routerLink]="[ '/pelicula', peliculas[0].id, 'home' ]"
+              [style.background-image]="'url('+ peliculas[0].poster_path +')'">
+              <p class="pic-titulo">{{peliculas[0].original_title}}</p>
+          
+        </div>
+      </div>
+      <div class="row">
+        
+        <div class="col-sm-6 div-pic-2" 
+              [routerLink]="[ '/pelicula', peliculas[1].id, 'home' ]"
+              [style.background-image]="'url('+ peliculas[1].poster_path +')'">
+               <p class="pic-titulo">{{peliculas[1].original_title}}</p>
+        </div>
+
+        <div class="col-sm-6 div-pic-2"
+              [routerLink]="[ '/pelicula', peliculas[2].id, 'home' ]" 
+              [style.background-image]="'url('+ peliculas[2].poster_path +')'">
+               <p class="pic-titulo">{{peliculas[2].original_title}}</p>
+        </div>
+
+      </div>
+      
+    </div> <!-- End 1ra col -->
+
+
+
+
+    <div class="col-sm-6">
+      <div class="row">
+        <div class="col-sm-6 div-pic-2"
+              [routerLink]="[ '/pelicula', peliculas[3].id, 'home' ]" 
+              [style.background-image]="'url('+ peliculas[3].poster_path +')'">
+               <p class="pic-titulo">{{peliculas[3].original_title}}</p>
+        </div>
+        <div class="col-sm-6 div-pic-2"
+              [routerLink]="[ '/pelicula', peliculas[4].id, 'home' ]" 
+              [style.background-image]="'url('+ peliculas[4].poster_path +')'">
+               <p class="pic-titulo">{{peliculas[4].original_title}}</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12 div-pic-1"
+              [routerLink]="[ '/pelicula', peliculas[5].id, 'home' ]"
+              [style.background-image]="'url('+ peliculas[5].poster_path +')'">
+               <p class="pic-titulo">{{peliculas[5].original_title}}</p>
+        </div>
+      </div>
+      
+    </div>
+  </div>

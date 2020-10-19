@@ -1,0 +1,29 @@
+
+
+<h1>{{busqueda.original_title}}</h1>
+
+<div class="container row">
+	<div class="col-md-4 w-30">
+		<img [src]="busqueda.poster_path" class="img-fluid" alt="">
+	</div>
+
+	<div class="col-md-8">
+		<h3>Sipnosis</h3>
+		<hr>
+		<p>{{busqueda.overview}}</p>
+		<h4>Genero</h4>
+		<p>{{prob}}
+		</p>
+		<p>Popularidad:<span class="badge badge-primary">Primary</span></p>
+		<p>Voto Promedio:<span class="badge badge-primary">Primary</span></p>
+		<div class="float-rigth">
+		<button [routerLink]="['/'+pag]"
+				class="btn btn-outline-danger">
+			<i class=""></i>
+			 Regresar </button>	
+		</div>
+	</div>
+
+</div>
+
+

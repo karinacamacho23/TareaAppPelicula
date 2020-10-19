@@ -1,0 +1,29 @@
+
+
+<div class="container">
+
+	<label class="label-form">
+
+			Buscar:
+	</label>
+
+
+	<input  (keyup)="buscar( f.value )"
+			#f
+			class="form-control" type="text" 
+			placeholder="Buscar ">	
+
+</div>
+
+
+
+
+
+<div class="card-columns mt-5 pt-5" *ngIf="aparecer">
+  <div class="card" *ngFor="let item of busqueda">
+    <img [src]="item.poster_path" class="card-img-top" [routerLink]="['/pelicula', item.id, 'buscar']">
+    <div class="card-body">
+      <h5 class="card-title">{{item.original_title}}</h5>
+      <p class="card-text">{{item.overview}}</p>
+    </div>
+  </div>

@@ -1,0 +1,33 @@
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">AppPeliculas</h1>
+    <p class="lead">Esta es una aplicacion de Peliculas</p>
+  </div>
+</div>
+
+ 
+<div class="container" >
+  
+  <br>
+  <h1>Peliculas Mas Populares</h1>
+  <hr>
+    <div>
+      <app-galeria [peliculas]="populares|slice:0:6"></app-galeria>
+    </div>
+  <br>
+  <h1>Peliculas con Mas Rates</h1>
+  <hr>
+    <div>
+      <app-galeria [peliculas]="rates|slice:0:6"></app-galeria>
+    </div>
+  <br>
+  <h1>Peliculas Mas Populares para Niños</h1>
+  <hr>
+    <div>
+      <app-galeria [peliculas]="kids|slice:0:6"></app-galeria>
+    </div>
+      
+
+
+</div>
+
